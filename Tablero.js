@@ -19,20 +19,38 @@ class Tablero {
     constructor(filas, columnas) {
         this.filas = filas;
         this.columnas = columnas;
-        this.grid = [];
+        
 
         // Crear matriz vacía con Casillas
         function crearTablero() {
             for (let i = 0; i < filas; i++) {
                 this.grid[i] = [];
                 for (let j = 0; j < columnas; j++) {
-                    this.grid[i][j] = new Casilla();
+                    // new Casilla();
                 }
             }
         }
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     // Método para colocar un barco en el tablero
     colocarBarco(barco, fila, columna, orientacion) {
         if (orientacion === "H") {
